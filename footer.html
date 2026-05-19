@@ -2,46 +2,50 @@
 
 <div class="footerInner">
 
-<div class="footerTitle">
+<h3 class="footerBook">
 
-Beyond the Labels
+Beyond the Labels:
+Becoming Who God Says You Are
 
-</div>
+</h3>
 
-<p class="footerText">
+<p class="copyright">
 
-Beyond the Labels: Becoming Who God Says You Are<br>
-
-Written by Bradley Hobbs
+© <span id="year"></span>
+Bradley Hobbs.
+All Rights Reserved.
 
 </p>
 
-<nav class="footerLinks">
+<p class="designer">
 
-<a href="index.html">
-Home
+Website Design by
+
+<a
+href="https://brad-hobbswd.github.io/brad-hobbswd/"
+target="_blank"
+>
+
+Brad Hobbs Web Design
+
 </a>
 
-<a href="contents.html">
-Contents
+</p>
+
+<p class="social">
+
+Follow on Facebook:
+
+<a
+href="#"
+target="_blank"
+>
+
+Facebook
+
 </a>
 
-<a href="preface.html">
-Preface
-</a>
-
-<a href="conclusion.html">
-Conclusion
-</a>
-
-</nav>
-
-<div class="footerCopy">
-
-© <span id="year"></span>
-Bradley Hobbs • All Rights Reserved
-
-</div>
+</p>
 
 </div>
 
@@ -52,80 +56,58 @@ Bradley Hobbs • All Rights Reserved
 
 .siteFooter{
 
-margin-top:100px;
+margin-top:80px;
+padding:50px 25px;
 
-padding:
-60px
-25px;
+background:#151515;
 
-border-top:
-1px solid
-rgba(
+border-top:1px solid rgba(
 255,
 255,
 255,
 .08
 );
 
-background:
-rgba(
-255,
-255,
-255,
-.02
-);
+text-align:center;
 
 }
 
 .footerInner{
 
-max-width:1000px;
-
+max-width:700px;
 margin:auto;
-
-text-align:center;
 
 }
 
-.footerTitle{
+.footerBook{
 
-font-size:1.7rem;
-
-color:var(--gold);
+font-size:1.3rem;
 
 margin-bottom:20px;
 
-}
+line-height:1.5;
 
-.footerText{
-
-line-height:1.9;
-
-color:var(--text);
-
-margin-bottom:35px;
-
-opacity:.9;
+color:#ffffff;
 
 }
 
-.footerLinks{
+.copyright,
+.designer,
+.social{
 
-display:flex;
+margin:14px 0;
 
-justify-content:center;
+font-size:.95rem;
 
-flex-wrap:wrap;
+line-height:1.8;
 
-gap:25px;
-
-margin-bottom:40px;
+color:#cfcfcf;
 
 }
 
-.footerLinks a{
+.siteFooter a{
 
-color:var(--cream);
+color:#d6a861;
 
 text-decoration:none;
 
@@ -133,17 +115,9 @@ transition:.3s;
 
 }
 
-.footerLinks a:hover{
+.siteFooter a:hover{
 
-opacity:.7;
-
-}
-
-.footerCopy{
-
-opacity:.6;
-
-font-size:.9rem;
+opacity:.75;
 
 }
 
@@ -157,6 +131,8 @@ document
 "year"
 )
 .textContent=
+new Date()
+.getFullYear();
 new Date()
 .getFullYear();
 
