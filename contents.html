@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+Contents | Beyond the Labels
+
+</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--bg:#09111d;
+--bg2:#101b2c;
+--gold:#d8b06b;
+--cream:#f6efe4;
+--text:#d5d5d5;
+
+}
+
+body{
+
+font-family:Georgia,serif;
+
+background:
+linear-gradient(
+to bottom,
+#050b14,
+#09111d,
+#101b2c
+);
+
+color:var(--text);
+
+min-height:100vh;
+
+}
+
+.hero{
+
+padding:
+100px
+30px
+60px;
+
+text-align:center;
+
+}
+
+.small{
+
+color:var(--gold);
+
+letter-spacing:4px;
+
+text-transform:uppercase;
+
+margin-bottom:25px;
+
+}
+
+h1{
+
+font-size:
+clamp(
+2.5rem,
+6vw,
+4rem
+);
+
+color:var(--cream);
+
+margin-bottom:20px;
+
+}
+
+.sub{
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.8;
+
+opacity:.9;
+
+}
+
+.container{
+
+max-width:850px;
+
+margin:auto;
+
+padding:
+0
+25px
+80px;
+
+}
+
+.contents{
+
+background:
+rgba(
+255,
+255,
+255,
+.03
+);
+
+border:
+1px solid
+rgba(
+216,
+176,
+107,
+.1
+);
+
+border-radius:25px;
+
+padding:50px;
+
+}
+
+.contents a{
+
+display:flex;
+
+justify-content:space-between;
+
+padding:
+22px
+0;
+
+text-decoration:none;
+
+color:var(--cream);
+
+border-bottom:
+1px solid
+rgba(
+255,
+255,
+255,
+.06
+);
+
+transition:.3s;
+
+}
+
+.contents a:hover{
+
+padding-left:12px;
+
+}
+
+.contents a:last-child{
+
+border-bottom:none;
+
+}
+
+.number{
+
+color:var(--gold);
+
+margin-right:15px;
+
+}
+
+footer{
+
+text-align:center;
+
+padding:
+60px
+25px;
+
+opacity:.6;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="small">
+
+Book Contents
+
+</div>
+
+<h1>
+
+Beyond the Labels
+
+</h1>
+
+<p class="sub">
+
+Choose a chapter and continue the journey toward identity, grace, redemption, belonging, and hope.
+
+</p>
+
+</section>
+
+
+<div class="container">
+
+<div class="contents">
+
+<a href="preface.html">
+
+<span>
+Preface
+</span>
+
+<span>
+→
+</span>
+
+</a>
+
+
+<a href="chapter1.html">
+
+<span>
+
+<span class="number">
+1.
+</span>
+
+The Weight of Labels and the Lie of Disqualification
+
+</span>
+
+<span>
+→
+</span>
+
+</a>
+
+
+<a href="chapter2.html">
+
+<span>
+
+<span class="number">
+2.
+</span>
+
+What the Bible Really Says About Grace and Salvation
+
+</span>
+
+<span>
+→
+</span>
+
+</a>
+
+
+<a href="chapter3.html">
+
+<span>
+
+<span class="number">
+3.
+</span>
+
+Identity and Holiness, Can They Coexist
+
+</span>
+
+<span>
+→
+</span>
+
+</a>
+
+
+<a href="chapter4.html">
+
+<span>
+
+<span class="number">
+4.
+</span>
+
+The Power of Redemption, Stories of Transformation
+
+</span>
+
+<span>
+→
+</span>
+
+</a>
+
+
+<a href="chapter5.html">
+
+<span>
+
+<span class="number">
+5.
+</span>
+
+Building a Holy Life in a World of Rejection
+
+</span>
+
+<span>
+→
+</span>
+
+</a>
+
+
+<a href="chapter6.html">
+
+<span>
+
+<span class="number">
+6.
+</span>
+
+The Family of God, A Place for Everyone
+
+</span>
+
+<span>
+→
+</span>
+
+</a>
+
+
+<a href="chapter7.html">
+
+<span>
+
+<span class="number">
+7.
+</span>
+
+Heaven's Invitation, Why You Belong
+
+</span>
+
+<span>
+→
+</span>
+
+</a>
+
+
+<a href="conclusion.html">
+
+<span>
+
+Conclusion
+
+</span>
+
+<span>
+→
+</span>
+
+</a>
+
+</div>
+
+</div>
+
+
+<footer>
+
+© <span id="year"></span>
+Bradley Hobbs
+
+</footer>
+
+<script>
+
+document
+.getElementById(
+"year"
+)
+.textContent=
+new Date()
+.getFullYear();
+
+</script>
+
+</body>
+</html>
