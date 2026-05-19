@@ -38,9 +38,7 @@ min-height:100vh;
 
 display:flex;
 
-justify-content:center;
-
-align-items:center;
+flex-direction:column;
 
 padding:30px;
 
@@ -63,6 +61,8 @@ color:var(--text);
 .box{
 
 max-width:800px;
+
+margin:auto;
 
 padding:60px;
 
@@ -216,6 +216,33 @@ Every journey can find the way back.
 </div>
 
 </div>
+
+
+<div id="footer"></div>
+
+<script>
+
+fetch(
+"footer.html"
+)
+
+.then(
+response=>response.text()
+)
+
+.then(
+data=>{
+
+document
+.getElementById(
+"footer"
+)
+
+.innerHTML=data;
+
+});
+
+</script>
 
 </body>
 </html>
