@@ -166,26 +166,6 @@ font-weight:bold;
 
 }
 
-footer{
-
-text-align:center;
-
-padding:
-50px
-25px;
-
-margin-top:70px;
-
-border-top:
-1px solid
-rgba(
-255,
-255,
-255,
-.08
-);
-
-}
 
 </style>
 
@@ -302,21 +282,30 @@ Chapter Six →
 
 </div>
 
-<footer>
 
-© <span id="year"></span>
-Bradley Hobbs
-
-</footer>
+<div id="footer"></div>
 
 <script>
 
-.getElementById(
-"year"
+fetch(
+"footer.html"
 )
-.textContent=
-new Date()
-.getFullYear();
+
+.then(
+response=>response.text()
+)
+
+.then(
+data=>{
+
+document
+.getElementById(
+"footer"
+)
+
+.innerHTML=data;
+
+});
 
 </script>
 
