@@ -180,24 +180,19 @@ font-weight:bold;
 
 }
 
-footer{
+@media(max-width:700px){
+
+.nav{
+
+flex-direction:column;
+
+}
+
+.nav a{
 
 text-align:center;
 
-padding:
-50px
-25px;
-
-margin-top:70px;
-
-border-top:
-1px solid
-rgba(
-255,
-255,
-255,
-.08
-);
+}
 
 }
 
@@ -318,22 +313,29 @@ Return Home →
 </div>
 
 
-<footer>
-
-© <span id="year"></span>
-Bradley Hobbs
-
-</footer>
+<div id="footer"></div>
 
 <script>
 
+fetch(
+"footer.html"
+)
+
+.then(
+response=>response.text()
+)
+
+.then(
+data=>{
+
 document
 .getElementById(
-"year"
+"footer"
 )
-.textContent=
-new Date()
-.getFullYear();
+
+.innerHTML=data;
+
+});
 
 </script>
 
