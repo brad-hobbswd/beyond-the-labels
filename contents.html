@@ -177,6 +177,24 @@ border-bottom:none;
 
 }
 
+  @media(max-width:700px){
+
+.contents{
+
+padding:30px;
+
+}
+
+.contents a{
+
+font-size:.95rem;
+
+gap:15px;
+
+}
+
+}
+
 .number{
 
 color:var(--gold);
@@ -185,17 +203,6 @@ margin-right:15px;
 
 }
 
-footer{
-
-text-align:center;
-
-padding:
-60px
-25px;
-
-opacity:.6;
-
-}
 
 </style>
 
@@ -395,22 +402,29 @@ Conclusion
 </div>
 
 
-<footer>
-
-© <span id="year"></span>
-Bradley Hobbs
-
-</footer>
+<div id="footer"></div>
 
 <script>
 
+fetch(
+"footer.html"
+)
+
+.then(
+response=>response.text()
+)
+
+.then(
+data=>{
+
 document
 .getElementById(
-"year"
+"footer"
 )
-.textContent=
-new Date()
-.getFullYear();
+
+.innerHTML=data;
+
+});
 
 </script>
 
