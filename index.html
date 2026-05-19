@@ -223,64 +223,22 @@ margin-bottom:25px;
 
 }
 
-footer{
+@media(max-width:700px){
 
-margin-top:90px;
+.hero{
 
 padding:
-60px
-25px;
-
-text-align:center;
-
-border-top:
-1px solid
-rgba(
-255,
-255,
-255,
-.08
-);
-
-background:
-rgba(
-255,
-255,
-255,
-.02
-);
-
-}
-
-.footerLinks{
-
-display:flex;
-
-justify-content:center;
-
-gap:25px;
-
-flex-wrap:wrap;
-
-margin:
+90px
 25px
-0;
+70px;
 
 }
 
-.footerLinks a{
+.card{
 
-color:var(--cream);
-
-text-decoration:none;
+padding:35px;
 
 }
-
-.copy{
-
-opacity:.6;
-
-font-size:.9rem;
 
 }
 
@@ -368,55 +326,29 @@ Labels may describe parts of a story, yet labels never determine destiny. Grace 
 </section>
 
 
-<footer>
-
-<div>
-
-Beyond the Labels
-
-</div>
-
-<div class="footerLinks">
-
-<a href="contents.html">
-
-Contents
-
-</a>
-
-<a href="preface.html">
-
-Preface
-
-</a>
-
-<a href="conclusion.html">
-
-Conclusion
-
-</a>
-
-</div>
-
-<div class="copy">
-
-© <span id="year"></span>
-Bradley Hobbs
-
-</div>
-
-</footer>
-
+<div id="footer"></div>
 
 <script>
 
+fetch(
+"footer.html"
+)
+
+.then(
+response=>response.text()
+)
+
+.then(
+data=>{
+
 document
 .getElementById(
-"year"
+"footer"
 )
-.textContent=
-new Date()
-.getFullYear();
+
+.innerHTML=data;
+
+});
 
 </script>
 
