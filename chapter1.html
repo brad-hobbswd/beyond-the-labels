@@ -266,27 +266,29 @@ Chapter Two →
 </div>
 
 
-
-<footer>
-
-© <span id="year"></span>
-Bradley Hobbs
-
-</footer>
-
+<div id="footer"></div>
 
 <script>
 
-document
-.getElementById(
-"year"
+fetch(
+"footer.html"
 )
 
-.textContent=
+.then(
+response=>response.text()
+)
 
-new Date()
+.then(
+data=>{
 
-.getFullYear();
+document
+.getElementById(
+"footer"
+)
+
+.innerHTML=data;
+
+});
 
 </script>
 
