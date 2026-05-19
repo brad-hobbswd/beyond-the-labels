@@ -10,7 +10,7 @@ This project presents *Beyond the Labels: Becoming Who God Says You Are* as an i
 
 Read online here:
 
-https://brad-hobbs.github.io/[repository-name]/
+https://brad-hobbs.github.io/beyond-the-labels/
 
 ---
 
