@@ -166,27 +166,6 @@ font-weight:bold;
 
 }
 
-footer{
-
-text-align:center;
-
-padding:
-50px
-25px;
-
-margin-top:70px;
-
-border-top:
-1px solid
-rgba(
-255,
-255,
-255,
-.08
-);
-
-}
-
 </style>
 
 </head>
@@ -215,20 +194,19 @@ What the Bible Really Says About Grace and Salvation
 <div class="chapterText">
 
 <p>
-The central question of the Christian faith is this. Who can be saved and how does salvation truly work. For many, the answers they have heard were shaped more by fear and tradition than by the full witness of Scripture. Some were told that salvation is reserved for the pure or the conforming. Others were told that they were beyond hope because of identity, history, or failure. Yet the Bible presents a very different story. Salvation is God’s work from beginning to end. It is rooted in grace, accomplished by Christ, received through faith, and confirmed by the presence of the Holy Spirit. This is good news for every person who has been told that Heaven is not for them.
+The central question of the Christian faith is this. Who can be saved and how does salvation truly work...
 </p>
 
 <p>
-Grace stands at the heart of the gospel. Grace is not vague kindness or sentimental tolerance. Grace is the strong, determined love of God that seeks and saves. Grace is God moving toward sinners with mercy, not sinners climbing their way to God through effort. The Apostle Paul declares that salvation is a gift. For by grace, you have been saved through faith. And this is not your own way. It is the gift of God, not a result of works, so that no one may boast. These words dismantle two dangerous illusions. The first illusion is pride, the belief that we can earn God’s favor through personal achievement. The second illusion is despair, the belief that we are too broken or too different to be forgiven. Grace humbles pride and heals despair. Grace puts the focus on God’s action in Christ rather than our performance.
+Grace stands at the heart of the gospel...
 </p>
 
 <p>
-The cross is the decisive act of grace. When Jesus said It is finished, He declared that the debt of sin had been paid in full...
+The cross is the decisive act of grace...
 </p>
 
 <p>
-Continue pasting the remaining exact chapter text here exactly as written through:
-
+Continue the exact chapter text through the ending:
 "In Christ, you are invited. In Christ, you are secure. In Christ, you are being renewed."
 </p>
 
@@ -254,26 +232,29 @@ Chapter Three →
 </div>
 
 
-<footer>
-
-© <span id="year"></span>
-Bradley Hobbs
-
-</footer>
-
+<div id="footer"></div>
 
 <script>
 
-document
-.getElementById(
-"year"
+fetch(
+"footer.html"
 )
 
-.textContent=
+.then(
+response=>response.text()
+)
 
-new Date()
+.then(
+data=>{
 
-.getFullYear();
+document
+.getElementById(
+"footer"
+)
+
+.innerHTML=data;
+
+});
 
 </script>
 
